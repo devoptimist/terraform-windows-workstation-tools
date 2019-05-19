@@ -3,6 +3,10 @@ variable "chef_workstation_dl_url" {
   default = "https://packages.chef.io/files/stable/chef-workstation/0.2.53/windows/2016/chef-workstation-0.2.53-1-x64.msi"
 }
 
+variable "workstation_count" {
+  default = 1
+}
+
 variable "workstation_ips" {
   default = []
 }

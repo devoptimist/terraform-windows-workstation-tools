@@ -9,7 +9,7 @@ data "template_file" "install_ws" {
 }
 
 resource "null_resource" "workstation_base_install" {
-  count = "${length(var.workstation_ips)}"
+  count = "${var.workstation_count}"
 
   triggers {
     template = "${data.template_file.install_ws.rendered}"
