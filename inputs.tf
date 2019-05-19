@@ -7,10 +7,6 @@ variable "workstation_ips" {
   default = []
 }
 
-variable "workstation_count" {
-  default = 1
-}
-
 variable "workstation_use_chocolatey" {
   default = true
 }
