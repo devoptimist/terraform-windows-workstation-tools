@@ -1,6 +1,6 @@
-variable "chef_workstation_dl_url" {
+variable "chef_workstation_version" {
   type    = "string"
-  default = "https://packages.chef.io/files/stable/chef-workstation/0.2.53/windows/2016/chef-workstation-0.2.53-1-x64.msi"
+  default = "0.2.48"
 }
 
 variable "workstation_count" {
@@ -21,4 +21,9 @@ variable "winrm_password" {
 
 variable "winrm_user" {
   type    = "string"
+}
+
+variable "hab_version" {
+  type    = "string"
+  default = "0.81.0"
 }

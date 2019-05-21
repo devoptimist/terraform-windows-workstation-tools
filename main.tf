@@ -2,9 +2,11 @@ data "template_file" "install_ws" {
   template = "${file("${path.module}/templates/install_ws.ps1")}"
 
   vars {
-    chef_workstation_dl_url  = "${var.chef_workstation_dl_url}",
+    chef_workstation_version = "${var.chef_workstation_version}",
     use_chocolatey           = "${var.workstation_use_chocolatey}",
-    user                     = "${var.winrm_user}"
+    user                     = "${var.winrm_user}",
+    hab_version              = "${var.hab_version}",
+    chef_workstation_version = "${var.chef_workstation_version}"
   }
 }
 
