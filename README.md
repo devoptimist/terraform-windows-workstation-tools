@@ -6,7 +6,7 @@ This module connects via winrm and installs some chef related tools.
 ```hcl
 module "workstation_names" {
   source                     = "devoptimist/workstation-tools/windows"
-  version                    = "0.0.5"
+  version                    = "0.0.6"
   workstation_use_chocolatey = true
   workstation_ips            = ["192.168.0.1", "192.168.0.2", "192.168.0.3"]
   winrm_password             = "MyP@ssW0rd!"
