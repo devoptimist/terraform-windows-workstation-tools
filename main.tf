@@ -22,7 +22,7 @@ resource "null_resource" "workstation_base_install" {
     user     = "${var.winrm_user}"
     password = "${var.winrm_password}"
     host     = "${var.workstation_ips[count.index]}"
-    timeout  = "25m"
+    timeout  = "50m"
   }
 
   provisioner "file" {
